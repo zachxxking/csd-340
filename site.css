@@ -1,0 +1,32 @@
+/* Zachariah King - site.css */
+
+/* Container Styles */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Heading Styles (h1, h2, h3, h4) */
+h1, h2, h3, h4 {
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    border: 1px solid #D6A800; /* Border color */
+    padding: 10px; /* Padding for the headings */
+}
+
+/* Anchor Tag Styles */
+a {
+    color: #3498db; /* Color that blends in with the color scheme (blue here) */
+    text-decoration: none; /* No underline on the links */
+}
+
+/* Anchor Hover Styles */
+a:hover {
+    color: #2980b9; /* Slightly darker blue for hover effect */
+}
+
+/* Anchor Visited Styles */
+a:visited {
+    color: #2980b9; /* Same color as hover for visited links */
+}
