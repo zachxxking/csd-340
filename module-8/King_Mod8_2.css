@@ -1,0 +1,122 @@
+/*
+Zachariah King
+Mod8_2_css
+4/20/25
+*/
+
+/* Header Styles */
+header {
+  background-color: #4a90e2; /* Blue tone to match landing page */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* Navbar Styles */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-bottom: 15px solid #4a90e2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #575757;
+  color: #ffcc00; /* Example hover color */
+}
+
+/* Container Styles */
+#container {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+/* Card Styles */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  color: #2c3e50;
+  font-weight: 400;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+/* Table Styles */
+#movies {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#movies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#movies td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Footer styling */
+footer {
+  position: fixed; /* changed from absolute */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4a90e2; /* Same as header */
+}
+
+.footer-right {
+  color: white;
+  font-weight: 400;
+  float: right;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Container div styling */
+.container {
+  margin: 2% 5% 100px 5%; /* top right bottom left */
+}
