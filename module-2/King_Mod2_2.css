@@ -70,6 +70,16 @@ hr {
     margin: 30px 0;
 }
 
+/* Blanks and button styling for 9.3 assignment */
+.blanks {
+    font-weight: bold;
+    color: blue;
+}
+
+button {
+    margin: 5px 0;
+}
+
 /* General styling for container */
 #container {
     width: 80%;

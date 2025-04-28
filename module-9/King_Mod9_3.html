@@ -1,0 +1,101 @@
+<!--
+Zachariah King
+Assignment 9.3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zachariah King">
+    <meta name="description" content="Assignment 9.3 – JavaScript - Part 1">
+    
+    <!-- Link to external CSS file -->
+    <link href="King_Mod2_2.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Page title updated per instructions -->
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Main heading updated per instructions -->
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <h2>A Poem About the Journey</h2>
+
+        <!-- Paragraph 1: with a span placeholder for a word -->
+        <p>
+            In a world where hopes are often <span class="blanks" id="blank1">__________</span>,  
+            I chased the sun with dreams unspoken.  
+            Through valleys deep and mountains high,  
+            I sought the truth behind the <span class="blanks" id="blank2">__________</span>.
+        </p>
+
+        <!-- Paragraph 2: with a second word span -->
+        <p>
+            The winds would whisper tales of old,  
+            In stories that the stars still hold.  
+            Each step I took, a lesson learned,  
+            For every bridge I crossed or <span class="blanks" id="blank3">__________</span> I burned.
+        </p>
+
+        <!-- Paragraph 3: with a final word span -->
+        <p>
+            And now I stand with code in hand,  
+            A different dream, a different land.  
+            No longer lost, no longer blind,  
+            I found myself in lines that <span class="blanks" id="blank4">__________</span>.
+        </p>
+
+        <!-- Each button corresponds to one span; clicking it triggers a function -->
+        <button onclick="fillBlank1()">borrowed</button><br>
+        <button onclick="fillBlank2()">sky</button><br>
+        <button onclick="fillBlank3()">bridge</button><br>
+        <button onclick="fillBlank4()">bind</button><br>
+
+        <hr />
+
+        <!-- Footer address section with a link to Bellevue University -->
+        <address>
+            <a href="https://www.bellevue.edu" target="_blank">Bellevue University<br /></a>
+            1000 Galvin Road South<br />
+            Bellevue, NE 68005<br />
+        </address>
+    </div>
+
+    <!-- JavaScript section begins -->
+    <script>
+        // Declare 4 JavaScript variables, each holding a word as a string
+        let word1 = "borrowed";
+        let word2 = "sky";
+        let word3 = "bridge";
+        let word4 = "bind";
+
+        // These functions will replace the underscores with the correct word
+        function fillBlank1() {
+            // Replaces content of span with ID 'blank1'
+            document.getElementById("blank1").textContent = word1;
+        }
+
+        function fillBlank2() {
+            // Replaces content of span with ID 'blank2'
+            document.getElementById("blank2").textContent = word2;
+        }
+
+        function fillBlank3() {
+            // Replaces content of span with ID 'blank3'
+            document.getElementById("blank3").textContent = word3;
+        }
+
+        function fillBlank4() {
+            // Replaces content of span with ID 'blank4'
+            document.getElementById("blank4").textContent = word4;
+        }
+    </script>
+</body>
+
+</html>
