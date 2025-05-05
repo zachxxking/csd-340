@@ -1,0 +1,38 @@
+<!--
+Zachariah King
+Assignment 10.3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Zachariah King">
+  <meta name="description" content="Assignment 10.3 – JavaScript - Part 2">
+  <script src="King_Mod10_3.js"></script>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+  <img src="lana1.jpg" id="image1" 
+     onmouseover="newPicture1()" 
+     onmouseout="oldPicture1()" 
+     onclick="handleImageClick('image1')">
+
+  <p id="text1" onmouseover="newText1()" onmouseout="oldText1()">Put your mouse over here to reveal the color of passion.</p>
+  <p>Now who is the queen of passion you may ask? Move over the ? mark to find out."</p>
+
+  <img src="image1.jpg" id="image2" 
+     onmouseover="newPicture2()" 
+     onmouseout="oldPicture2()" 
+     onclick="handleImageClick('image2')">
+  
+  <p>It's the iconic singer known as Lana Del Rey! The first images were a hint.
+  
+  <p id="text2" onmouseover="newText2()" onmouseout="oldText2()">Now put your mouse over here to reveal the color of nostalgia, a concept Lana captures so well.</p>
+
+</body>
+</html>
