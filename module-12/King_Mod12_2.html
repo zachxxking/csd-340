@@ -1,0 +1,94 @@
+<!--
+Zachariah King
+Assignment 12.2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zachariah King">
+    <meta name="description" content="Assignment 12.2 – JavaScript, Part 4">
+    <link href="King_Mod3_3.css" type="text/css" rel="stylesheet" />
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <div class="side-by-side">
+      <div class="left">
+        <div class="ordered-wrapper">
+          <h3>Top 10 Favorite Books</h3>
+          
+          <!-- Buttons to control order -->
+          <button onclick="displayTopToBottom()">Top to Bottom</button>
+          <button onclick="displayBottomToTop()">Bottom to Top</button>
+
+          <ul id="bookList"></ul>
+        </div>
+      </div>
+      
+      <div class="right">
+        <div class="unordered-wrapper">
+          <h3>5 Things I’ve Learned Since the Course Started</h3>
+          <ul class="unordered-list">
+            <li>Basic Structure for HTML documents</li>
+            <li>Validation Techniques</li>
+            <li>Best Documentation Habits</li>
+            <li>Linking HTML pages to each other and to CSS files</li>
+            <li>Box Formatting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-link">
+      <a href="../index.html">Back to Landing Page</a>
+    </div>
+  </div>
+
+  <!-- JavaScript section -->
+  <script>
+  const books = [
+    { number: 1, title: "Looking for Alaska" },
+    { number: 2, title: "Violet Bent Backwards Over the Grass" },
+    { number: 3, title: "Hollywood Gothic" },
+    { number: 4, title: "The Shining" },
+    { number: 5, title: "Dracula" },
+    { number: 6, title: "The Woman in Black" },
+    { number: 7, title: "Frankenstein" },
+    { number: 8, title: "Carrie" },
+    { number: 9, title: "The Fault in Our Stars" },
+    { number: 10, title: "If I Stay" }
+  ];
+
+  function displayTopToBottom() {
+    const list = document.getElementById("bookList");
+    list.innerHTML = "";
+    const sorted = [...books].sort((a, b) => a.number - b.number);
+    sorted.forEach(book => {
+      const li = document.createElement("li");
+      li.textContent = `${book.number}. ${book.title}`;
+      list.appendChild(li);
+    });
+  }
+
+  function displayBottomToTop() {
+    const list = document.getElementById("bookList");
+    list.innerHTML = "";
+    const sorted = [...books].sort((a, b) => b.number - a.number);
+    sorted.forEach(book => {
+      const li = document.createElement("li");
+      li.textContent = `${book.number}. ${book.title}`;
+      list.appendChild(li);
+    });
+  }
+
+  window.onload = displayTopToBottom;
+  </script>
+</body>
+</html>

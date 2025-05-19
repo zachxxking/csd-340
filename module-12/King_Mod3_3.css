@@ -1,0 +1,67 @@
+/* Zachariah King - King_Mod3_3.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+ol, ul {
+  font-weight: 300;
+  list-style-position: inside;
+}
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left, .right {
+  width: 45%;
+}
+
+/* Wrappers for title + list */
+.ordered-wrapper {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.unordered-wrapper {
+  border: 1px dashed red;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.unordered-wrapper ul {
+  list-style-type: upper-roman;
+}
+
+.bottom-link {
+  width: 100%;
+  margin-top: 60%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+
+.bottom-link a:hover {
+  text-decoration: underline;
+}
